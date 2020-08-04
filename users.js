@@ -9,9 +9,7 @@ const addUser = ({ id, name, room }) => {
   if (existingUser) {
     return { error: "Username is taken" };
   }
-  console.log(existingUser);
   const user = { id, name, room };
-  console.log(users);
   users.push(user);
   return { user };
 };
